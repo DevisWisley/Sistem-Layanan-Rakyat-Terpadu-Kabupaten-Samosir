@@ -1,0 +1,8 @@
+# Aktifkan Rewrite Engine
+RewriteEngine On
+
+# Jika file atau folder tidak ditemukan, arahkan ke pages/404.php
+ErrorDocument 404 /pages/404.php
+
+# Nonaktifkan directory listing
+Options -Indexes

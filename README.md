@@ -1,0 +1,214 @@
+# 🏛️ SILARA
+
+**Sistem Layanan Rakyat Terpadu Kabupaten Samosir (SILARA)** is a web-based application designed to **simplify the digital process for the public to request and monitor public services**. 
+
+This system supports **multi-role login (Admin, Resident, Service)** and features an **interactive dashboard, resident data, service data, and online submissions.** It includes **Bootstrap, TailwindCSS, SweetAlert2, dan Chart.js**.
+
+---
+
+## ✨ Features
+
+- 🔐 **Multi-Role Authentication**
+  - Login and Register for **Admin**, **Residents**, and **Service Officers**
+  - Page protection with PHP sessions
+  - Automatic redirection based on login role
+
+- 🧾 **Landing Page (index.php)**
+  - Hero section with dynamic background (AOS)
+  - Login/register navigation
+  - Public service information and statistics (Chart.js)
+  - Informative footer with official contacts
+
+- 📊 **Interactive Dashboard (Admin / Services / Residents)**
+  - Layout components: TopBar, Sidebar, Footer
+  - Submission statistics & number of services with Chart.js
+  - Action notifications using SweetAlert2
+  - Interactive tables (DataTables)
+
+- 👥 **CRUD Population Data**
+  - NIK, Full Name, Email, Date of Birth, Telephone Number, Village, Sub-district
+  - Input validation & upload of supporting files (Dropzone.js)
+  - Search and filter with DataTables
+
+- 🧰 **CRUD Service Data**
+  - Service ID, Name, Category, Description, and Document Requirements
+  - Add, edit, and delete features with SweetAlert2 confirmation
+
+- 📨 **CRUD Submission Data**
+  - Submission ID, NIK, Service ID, Date, Status, Description
+  - Upload supporting files via Dropzone.js
+  - Status notification to residents
+
+- 🧑‍💼 **CRUD Admin Data**
+  - Admin ID, Name, Username, Position, Password, Role
+  - Admin and service officer account management
+
+- 📈 **Statistics & Reports**
+  - Graph of the number of submissions per service (Chart.js)
+  - Resident data summary per sub-district
+
+- 📄 **.htaccess Protection**
+  - URL rewrite friendly
+  - Restrict access to certain folders (upload, config)
+
+---
+
+## ⚙️ Technology Used
+
+| Teknologi | Deskripsi |
+|------------|------------|
+| 💻 **PHP Native** | The primary language for server processing, authentication, and MySQL database connections without a framework. |
+| 🗄️ **MySQL** | Relational database for storing population, service, application and admin data. |
+| 🎨 **Bootstrap** | CSS framework for responsive layouts and ready-to-use interface components. |
+| 💨 **Tailwind CSS** | Utility-first CSS framework for flexible appearance customization. |
+| 🧾 **DataTables** | Provides interactive tables (search, sort, pagination). |
+| 📊 **Chart.js** | Data visualization in the form of bar, pie, and line graphs. |
+| 💬 **SweetAlert2** | Modern popups for user action confirmation and notification. |
+| 🌈 **AOS (Animate On Scroll)** | Animation effects when elements appear on the screen (landing page and dashboard). |
+| 📁 **Dropzone.js** | Library upload files with drag and drop preview. |
+| 🧱 **Font Awesome** | Icons for navigation UI, buttons, and graphical elements. |
+| 🖋️ **Google Fonts** | Professional typography for interface display. |
+| 🧠 **jQuery** | DOM manipulation and event handling (AJAX, modal, form). |
+| 📜 **Markdown** | System documentation format and user manual. |
+| 🌐 **.htaccess** | URL rewrite & folder security. |
+| 🧰 **CSS & JavaScript** | To beautify the appearance and increase user interaction. |
+
+---
+
+---
+
+## 📂 Struktur Folder
+```
+└── 📦 silara
+    └── 📂.history
+    └── 📂.vscode
+    └── 📂auth
+        ├── 📜 login.php
+        ├── 📜 logout.php
+        ├── 📜 register.php
+    └── 📂config
+        ├── 📜 db.php
+    └── 📂dashboard
+        ├── 📜 admin.php
+        ├── 📜 buat_pengajuan.php
+        ├── 📜 index.php
+        ├── 📜 layanan.php
+        ├── 📜 penduduk.php
+        ├── 📜 pengajuan.php
+        ├── 📜 settings.php
+        ├── 📜 status.php
+    └── 📂database
+        ├── 📜 code.sql
+   └── 📂includes
+        ├── 📜 footer.php
+        ├── 📜 header.php
+        ├── 📜 sidebar.php
+        ├── 📜 topbar.php
+   └── 📂pages
+        ├── 📜 about.php
+   └── 📂uploads
+        ├── 📜 profile.png
+    ├── 📜 .htaccess
+    ├── 📜 CODE_OF_CONDUCT
+    ├── 📜 index.php
+    ├── 📜 LICENSE
+    ├── 📜 README.md
+    └── 📜 SECURITY
+```
+
+---
+
+## 🗃️ Struktur Database (MySQL)
+
+### 1. Table `penduduk`
+| Column | Data Type | Information |
+|--------|------------|------------|
+| nik | VARCHAR(20) | Primary Key |
+| nama_lengkap | VARCHAR(100) | Full name of resident |
+| email | VARCHAR(100) | Active email |
+| tgl_lahir | DATE | Date of birth |
+| no_telp | VARCHAR(20) | Phone number |
+| desa | VARCHAR(100) | Village name |
+| kecamatan | VARCHAR(100) | Subdistrict name |
+
+### 2. Table `layanan`
+| Column | Data Type | Information |
+|--------|------------|------------|
+| id_layanan | INT AUTO_INCREMENT | Primary Key |
+| nama_layanan | VARCHAR(100) | Service name |
+| kategori | VARCHAR(50) | Service categories |
+| deskripsi | TEXT | Service descriptionlayanan |
+| syarat_dokumen | TEXT | File/document requirements |
+
+### 3. Table `pengajuan`
+| Column | Data Type | Information |
+|--------|------------|------------|
+| id_pengajuan | INT AUTO_INCREMENT | Primary Key |
+| nik | VARCHAR(20) | Relation to population table |
+| id_layanan | INT | Relationship to service table |
+| tgl_pengajuan | DATE | Submission date |
+| status | ENUM('Diproses','Selesai','Ditolak') | Service process status |
+| keterangan | TEXT | Additional notes |
+| file_pendukung | VARCHAR(255) | Supporting documents |
+
+### 4. Table `admin`
+| Column | Data Type | Information |
+|--------|------------|------------|
+| id_admin | INT AUTO_INCREMENT | Primary Key |
+| nama_admin | VARCHAR(100) | Name of officer/admin |
+| username | VARCHAR(50) | Login username |
+| jabatan | VARCHAR(50) | Title/position |
+| password | VARCHAR(255) | Encrypted password |
+| role | ENUM('Admin','Layanan') | Access rights |
+
+---
+
+## ▶️ How to Run
+1. 🗃️ **Import Database**  
+    Open `phpMyAdmin` then **import** the `db_silara.sql` file
+2. ⚙️ **Database Configuration**  
+   Edit the `db.php` file and adjust it to your MySQL configuration:
+
+   ```php
+   $host = "localhost";
+   $user = "root";
+   $password = "";
+   $db = "db_silara";
+3. 🌐 **Run Application**
+    Open a browser and access: `http://localhost/silara
+
+---
+
+## 🖼️ Media & File Handling
+- 📁 File Upload (PHP) – Profile photo upload feature with validation and preview.
+- 🖼️ Image Preview (JavaScript) – Displays a preview of the uploaded image before saving it to the server.
+
+## 🔧 Development & Testing
+
+| Tools | Description |
+|-------|-----------|
+| 🖥️ XAMPP | Local server environment to run PHP + MySQL locally.|
+| 🗂️ phpMyAdmin | Web interface for managing MySQL databases.|
+| 🧪 Google Chrome DevTools | For element inspection, CSS/JS debugging, and responsive testing.|
+| 📝 Visual Studio Code | The main code editor used for project development.|
+
+---
+
+## 🙋‍♂️ Developer
+
+This project was developed by **Devis Wisley**, a web developer with a passion for PHP-based web application development, modern UI/UX design, and the integration of front-end technologies like Bootstrap and Tailwind CSS. If you have any questions, would like to discuss, or are interested in collaborating on similar projects, please contact us through one of the following platforms:
+
+| Contact Information | Detail |
+|------------------|--------|
+| 📛 **Nama**         | Devis Wisley |
+| 📧 **Email**        | [deviswisley27@gmail.com](mailto:deviswisley27@gmail.com) – Please send questions, collaborations, or project feedback. |
+| 🌐 **Portfolio**    | [codingindo.vercel.app](https://codingindo.vercel.app/) – See other projects that have been worked on. |
+| 🐙 **GitHub**       | [github.com/deviswisley](https://www.github.com/deviswisley) – Source code repository and open source contributions. |
+| 📘 **Facebook**     | [facebook.com/devis.wisley](https://www.facebook.com/devis.wisley/) – Connect and have a relaxed discussion. |
+| 📸 **Instagram**    | [instagram.com/deviswisley](https://www.instagram.com/deviswisley/) – Activities and design work shared visually. |
+| 🔗 **LinkedIn**     | [linkedin.com/in/deviswisley](https://www.linkedin.com/in/deviswisley/) – Professional network and work experience. |
+| 📱 **WhatsApp**     | [Chat via WhatsApp](https://api.whatsapp.com/send?phone=6282274107967) – Connect instantly for fast communication. |
+
+---
+
+Please get in touch if you have suggestions, request additional features, would like to provide support, or are interested in similar projects.
