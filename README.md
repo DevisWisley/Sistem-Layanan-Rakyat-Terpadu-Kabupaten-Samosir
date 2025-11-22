@@ -75,7 +75,7 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 | <img src="https://github.com/RashmiDulashani/Skill-Icons/raw/main/icons/PHP-Dark.svg" width="30"/> | **PHP Native** | The primary language for server processing, authentication, and MySQL database connections without a framework. |
 | <img src="https://sweetalert2.github.io/images/favicon.png" width="30"/> | **SweetAlert2** | Modern popups for user action confirmation and notification. |
 | <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg" width="30"/> | **Tailwind CSS** | Utility-first CSS framework for flexible appearance customization. |
-| <img src="https://upload.wikimedia.org/wikipedia/en/7/78/XAMPP_logo.svg" width="30"/> | **XAMPP (Apache + MySQL + PHP)** | for local development. |
+| <img src="https://cdn-icons-png.flaticon.com/512/1202/1202760.png" width="30"/> | **XAMPP / Laragon** | Local development environment (Apache + MySQL + PHP). |
 
 ---
 
@@ -181,8 +181,8 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
    C:\xampp\htdocs\silara
    ```
 
-3. 🖥️ Siapkan Laragon (Pilihan 2)
-   - ⚡ Enable Apache and MySQL via Laragon
+3. 🐯 Siapkan Laragon (Pilihan 2)
+   - 🏃 Enable Apache and MySQL via Laragon
    - 📂 Move the silara folder to the directory:
     ```bash
    C:\laragon\www\silara
@@ -210,6 +210,26 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 - 📁 File Upload (**Dropzone.js**) – Profile photo upload feature.
 - 🖼️ Image Preview (**JavaScript**) – Displays a preview of the uploaded image before saving it to the server.
 - 🔍 Validasi ukuran & format otomatis
+
+---
+
+## 🔒 Security & Best Practices
+- 🧩 Always use `password_hash()` and `password_verify()` to store passwords.
+- 🚫 Restrict access to the `uploads` / folder via `.htaccess` and store the file path in the DB instead of direct access.
+- 🛡️ Validate uploaded files on the server: maximum size, MIME type, and extension.
+- 🧱 Use prepared statements / parameterized queries (mysqli/ PDO) to prevent SQL Injection.
+- ❗ Avoid putting configurations containing credentials in public repositories.
+
+---
+
+## 🛠️ Special Integration Notes (Quick Tips)
+- 🎞️ **AOS**: simple initialization: `AOS.init({ duration: 800, once: true });`
+- 📊 **Chart.js**: use a PHP endpoint that outputs JSON for dynamic data and render charts in JS.
+- 📋 **DataTables**: enable server-side processing if the dataset is large.
+- 📤 **Dropzone.js**: set `maxFilesize`, `acceptedFiles` and CSRF token during upload.
+- 🔔 **SweetAlert2**: use for deletion confirmation and success/failure notifications.
+
+---
 
 ## 🔧 Development & Testing
 
