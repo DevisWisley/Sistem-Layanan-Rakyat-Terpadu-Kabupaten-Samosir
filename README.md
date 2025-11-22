@@ -75,6 +75,7 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 | <img src="https://github.com/RashmiDulashani/Skill-Icons/raw/main/icons/PHP-Dark.svg" width="30"/> | **PHP Native** | The primary language for server processing, authentication, and MySQL database connections without a framework. |
 | <img src="https://sweetalert2.github.io/images/favicon.png" width="30"/> | **SweetAlert2** | Modern popups for user action confirmation and notification. |
 | <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg" width="30"/> | **Tailwind CSS** | Utility-first CSS framework for flexible appearance customization. |
+| <img src="https://upload.wikimedia.org/wikipedia/en/7/78/XAMPP_logo.svg" width="30"/> | **XAMPP (Apache + MySQL + PHP)** | for local development. |
 
 ---
 
@@ -173,25 +174,34 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
    - Or download ZIP:
      - Click the `Code` button > `Download ZIP`
      - Extract the ZIP file to a folder of your choice
-2. 🖥️ Siapkan XAMPP
+2. 🖥️ Siapkan XAMPP (Pilihan 1)
    - ⚡ Enable Apache and MySQL via XAMPP Control Panel
    - 📂 Move the silara folder to the directory:
     ```bash
    C:\xampp\htdocs\silara
-
    ```
 
-3. 🗃️ **Import Database**  
+3. 🖥️ Siapkan Laragon (Pilihan 2)
+   - ⚡ Enable Apache and MySQL via Laragon
+   - 📂 Move the silara folder to the directory:
+    ```bash
+   C:\laragon\www\silara
+   ```
+
+4. 🗃️ **Import Database**  
     Open `phpMyAdmin` then **import** the `db_silara.sql` file
-4. ⚙️ **Database Configuration**  
-   Edit the `db.php` file and adjust it to your MySQL configuration:
+5. ⚙️ **Database Configuration**  
+   Edit the `config/db.php` file and adjust it to your MySQL configuration:
 
    ```php
    $host = "localhost";
    $user = "root";
    $password = "";
    $db = "db_silara";
-5. 🌐 **Run Application**
+   ```
+   > 📌 Catatan khusus untuk Laragon:
+   > Laragon biasanya tanpa password sama seperti XAMPP (root kosong), jadi konfigurasi ini tetap berlaku.
+6. 🌐 **Run Application**
     Open a browser and access: `http://localhost/silara
 
 ---
