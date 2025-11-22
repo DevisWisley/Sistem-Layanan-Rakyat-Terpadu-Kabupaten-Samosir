@@ -62,7 +62,7 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 | <img src="https://scicoding.com/content/images/2021/09/chartjs-logo-1.svg" width="30"/> | **Chart.js** | Data visualization in the form of bar, pie, and line graphs. |
 | <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg" width="30"/> | **CSS** | To beautify the appearance |
 | <img src="https://www.opencodez.com/wp-content/uploads/2017/02/datatable.png" width="30"/> | **DataTables** | Provides interactive tables (search, sort, pagination). |
-| <img src="[https://images.seeklogo.com/logo-png/27/2/dropzone-logo-png_seeklogo-273053.png?v=1957795016441400008](https://iconape.com/wp-content/png_logo_vector/dropzone.png)" width="30"/> | **Dropzone.js** | Library upload files with drag and drop preview. |
+| <img src="https://iconape.com/wp-content/png_logo_vector/dropzone.png" width="30"/> | **Dropzone.js** | Library upload files with drag and drop preview. |
 | <img src="https://tse3.mm.bing.net/th/id/OIP.IIym5Ox6guJgGP18tta4CQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="30"/> | **Font Awesome** | Icons for navigation UI, buttons, and graphical elements. |
 | <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg" width="30"/> | **Git** | Version control |
 | <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" width="30"/> | **GitHub** | Source code repository |
@@ -75,8 +75,6 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 | <img src="https://github.com/RashmiDulashani/Skill-Icons/raw/main/icons/PHP-Dark.svg" width="30"/> | **PHP Native** | The primary language for server processing, authentication, and MySQL database connections without a framework. |
 | <img src="https://sweetalert2.github.io/images/favicon.png" width="30"/> | **SweetAlert2** | Modern popups for user action confirmation and notification. |
 | <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg" width="30"/> | **Tailwind CSS** | Utility-first CSS framework for flexible appearance customization. |
-
----
 
 ---
 
