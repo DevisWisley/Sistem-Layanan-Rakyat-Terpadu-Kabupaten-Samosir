@@ -55,23 +55,26 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 
 ## ⚙️ Technology Used
 
-| Teknologi | Deskripsi |
-|------------|------------|
-| 💻 **PHP Native** | The primary language for server processing, authentication, and MySQL database connections without a framework. |
-| 🗄️ **MySQL** | Relational database for storing population, service, application and admin data. |
-| 🎨 **Bootstrap** | CSS framework for responsive layouts and ready-to-use interface components. |
-| 💨 **Tailwind CSS** | Utility-first CSS framework for flexible appearance customization. |
-| 🧾 **DataTables** | Provides interactive tables (search, sort, pagination). |
-| 📊 **Chart.js** | Data visualization in the form of bar, pie, and line graphs. |
-| 💬 **SweetAlert2** | Modern popups for user action confirmation and notification. |
-| 🌈 **AOS (Animate On Scroll)** | Animation effects when elements appear on the screen (landing page and dashboard). |
-| 📁 **Dropzone.js** | Library upload files with drag and drop preview. |
-| 🧱 **Font Awesome** | Icons for navigation UI, buttons, and graphical elements. |
-| 🖋️ **Google Fonts** | Professional typography for interface display. |
-| 🧠 **jQuery** | DOM manipulation and event handling (AJAX, modal, form). |
-| 📜 **Markdown** | System documentation format and user manual. |
-| 🌐 **.htaccess** | URL rewrite & folder security. |
-| 🧰 **CSS & JavaScript** | To beautify the appearance and increase user interaction. |
+| Icon | Teknologi | Deskripsi |
+|------|-----------|-----------|
+| <img src="https://www.bram.us/wordpress/wp-content/uploads/2016/08/68747470733a2f2f7333322e706f7374696d672e6f72672f6b7476743539686f6c2f616f735f6865616465722e706e67-300x186.png" width="30"/> | **AOS (Animate On Scroll)** | Animation effects when elements appear on the screen (landing page and dashboard). |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Bootstrap.svg" width="30"/> | **Bootstrap** | CSS framework for responsive layouts and ready-to-use interface components. |
+| <img src="https://scicoding.com/content/images/2021/09/chartjs-logo-1.svg" width="30"/> | **Chart.js** | Data visualization in the form of bar, pie, and line graphs. |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg" width="30"/> | **CSS** | To beautify the appearance |
+| <img src="https://www.opencodez.com/wp-content/uploads/2017/02/datatable.png" width="30"/> | **DataTables** | Provides interactive tables (search, sort, pagination). |
+| <img src="[https://images.seeklogo.com/logo-png/27/2/dropzone-logo-png_seeklogo-273053.png?v=1957795016441400008](https://iconape.com/wp-content/png_logo_vector/dropzone.png)" width="30"/> | **Dropzone.js** | Library upload files with drag and drop preview. |
+| <img src="https://tse3.mm.bing.net/th/id/OIP.IIym5Ox6guJgGP18tta4CQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="30"/> | **Font Awesome** | Icons for navigation UI, buttons, and graphical elements. |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg" width="30"/> | **Git** | Version control |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" width="30"/> | **GitHub** | Source code repository |
+| <img src="https://cdn.pnggallery.com/wp-content/uploads/google-fonts-logo-02.png" width="30"/> | **Google Fonts** | Professional typography for interface display. |
+| <img src="https://tse4.mm.bing.net/th/id/OIP.8C4FVrGE8BFPTHyktRMQKQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="30"/> | **.htaccess** | URL rewrite & folder security. |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg" width="30"/> | **JavaScript** | increase user interaction. |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/JQuery.svg" width="30"/> | **jQuery** | DOM manipulation and event handling (AJAX, modal, form). |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Markdown-Dark.svg" width="30"/> | **Markdown** | System documentation format and user manual. |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg" width="30"/> | **MySQL** | Relational database for storing population, service, application and admin data. |
+| <img src="https://github.com/RashmiDulashani/Skill-Icons/raw/main/icons/PHP-Dark.svg" width="30"/> | **PHP Native** | The primary language for server processing, authentication, and MySQL database connections without a framework. |
+| <img src="https://sweetalert2.github.io/images/favicon.png" width="30"/> | **SweetAlert2** | Modern popups for user action confirmation and notification. |
+| <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg" width="30"/> | **Tailwind CSS** | Utility-first CSS framework for flexible appearance customization. |
 
 ---
 
