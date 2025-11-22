@@ -165,9 +165,25 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 ---
 
 ## ▶️ How to Run
-1. 🗃️ **Import Database**  
+1. 📥 **Clone repositori:**
+   ```bash
+   git clone https://github.com/Sistem-Layanan-Rakyat-Terpadu-Kabupaten-Samosir.git
+   ```
+
+   - Or download ZIP:
+     - Click the `Code` button > `Download ZIP`
+     - Extract the ZIP file to a folder of your choice
+2. 🖥️ Siapkan XAMPP
+   - ⚡ Enable Apache and MySQL via XAMPP Control Panel
+   - 📂 Move the silara folder to the directory:
+    ```bash
+   C:\xampp\htdocs\silara
+
+   ```
+
+3. 🗃️ **Import Database**  
     Open `phpMyAdmin` then **import** the `db_silara.sql` file
-2. ⚙️ **Database Configuration**  
+4. ⚙️ **Database Configuration**  
    Edit the `db.php` file and adjust it to your MySQL configuration:
 
    ```php
@@ -175,14 +191,15 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
    $user = "root";
    $password = "";
    $db = "db_silara";
-3. 🌐 **Run Application**
+5. 🌐 **Run Application**
     Open a browser and access: `http://localhost/silara
 
 ---
 
 ## 🖼️ Media & File Handling
-- 📁 File Upload (PHP) – Profile photo upload feature with validation and preview.
-- 🖼️ Image Preview (JavaScript) – Displays a preview of the uploaded image before saving it to the server.
+- 📁 File Upload (**Dropzone.js**) – Profile photo upload feature.
+- 🖼️ Image Preview (**JavaScript**) – Displays a preview of the uploaded image before saving it to the server.
+- 🔍 Validasi ukuran & format otomatis
 
 ## 🔧 Development & Testing
 
@@ -190,6 +207,8 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
 |-------|-----------|
 | 🖥️ XAMPP | Local server environment to run PHP + MySQL locally.|
 | 🗂️ phpMyAdmin | Web interface for managing MySQL databases.|
+| 🐙 Git | Version control system used to track changes, manage project versions, and collaborate across development workflows. |
+| 🌐 GitHub | Online repository hosting service for storing source code, managing issues, documentation, collaboration, and CI/CD workflows. |
 | 🧪 Google Chrome DevTools | For element inspection, CSS/JS debugging, and responsive testing.|
 | 📝 Visual Studio Code | The main code editor used for project development.|
 
