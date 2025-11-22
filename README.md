@@ -174,14 +174,14 @@ This system supports **multi-role login (Admin, Resident, Service)** and feature
    - Or download ZIP:
      - Click the `Code` button > `Download ZIP`
      - Extract the ZIP file to a folder of your choice
-2. 🖥️ Siapkan XAMPP (Pilihan 1)
+2. 🖥️ Prepare XAMPP (Option 1)
    - ⚡ Enable Apache and MySQL via XAMPP Control Panel
    - 📂 Move the silara folder to the directory:
     ```bash
    C:\xampp\htdocs\silara
    ```
 
-3. 🐯 Siapkan Laragon (Pilihan 2)
+3. 🐯 Prepare Laragon (Option 2)
    - 🏃 Enable Apache and MySQL via Laragon
    - 📂 Move the silara folder to the directory:
     ```bash
